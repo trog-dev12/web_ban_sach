@@ -1,0 +1,146 @@
+/* =================== RESET & BASE =================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif', 'Times New Roman', serif;
+    background-color: #fdfaf4;
+    color: #3b2f2f;
+}
+
+/* =================== HEADER (ĐÃ SỬA CHO FILE INFO.PHP) =================== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Container chính của header: Giãn hết màn hình, đẩy các mục ra xa nhau */
+header .box {
+    width: 100%;
+    padding: 15px 25px; /* Tạo khoảng cách 40px ở hai bên lề */
+    display: flex;
+    justify-content: space-between; /* QUAN TRỌNG: Đẩy logo và shop ra 2 phía */
+    align-items: center;
+}
+
+/* --- Các thành phần con trong Header --- */
+
+/* 1. Logo */
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e272e;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* 2. Menu (nằm ở giữa) */
+header .menu ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding: 0;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: #2d3436;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header .menu ul li a:hover {
+    color: #e67e22;
+}
+
+/* 3. Khu vực Shop (chỉ có user) */
+.shop .icon-container a {
+    color: #050505;
+    font-size: 1.2rem; /* Làm icon to hơn một chút */
+}
+
+/* Định dạng cho trạng thái đã đăng nhập */
+#account-info {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Khoảng cách giữa "Xin chào" và "Đăng xuất" */
+    white-space: nowrap; /* CỰC KỲ QUAN TRỌNG: Ngăn chữ bị xuống dòng */
+}
+
+#account-info span,
+#account-info a {
+    text-decoration: none;
+    color: #2d3436;
+    font-weight: 600;
+}
+
+#account-info a:hover {
+    color: #e67e22;
+}
+
+
+/* =================== MAIN CONTENT (BẢN ĐỒ & FOOTER) =================== */
+h2 {
+    text-align: center;
+    color: #c79a3a;
+    margin-top: 120px; /* Đẩy nội dung xuống dưới header */
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+iframe {
+    display: block; /* Giúp căn giữa dễ hơn */
+    margin: 0 auto; /* Căn giữa bản đồ */
+    width: 90%;
+    max-width: 800px; /* Giới hạn chiều rộng tối đa */
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+footer {
+    max-width: 1100px;
+    margin: 100px auto 50px;
+    background: linear-gradient(to top right, #112d60, #b6c0c5);
+    color: white;
+    border-radius: 30px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+footer .title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+footer .menuBottom {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+footer .menuBottom li {
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

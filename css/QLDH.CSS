@@ -1,0 +1,208 @@
+/* =================== GIAO DIỆN QUẢN LÝ ĐƠN HÀNG - BOOK STORE =================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Noto Serif', serif;
+    background: url('../img/thu_vien.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #3b2f2f;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* ================= HEADER ================= */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(to right, #7c6753cc, #b49f85cc);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #d9c9ae;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header .box {
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 26px;
+    color: #fff7e6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 1px;
+}
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header .menu ul li a {
+    color: #fff7e6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-size: 16px;
+}
+
+header .menu ul li a:hover {
+    color: #ffd47f;
+}
+
+/* ================= NỘI DUNG CHÍNH ================= */
+main {
+    width: 1000px;
+    max-width: 95%;
+    margin: 130px auto 60px; /* thêm khoảng trống tránh header */
+    background-color: rgba(255, 248, 240, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    overflow-x: auto; /* tránh chữ bị tràn bảng */
+}
+
+h1 {
+    text-align: center;
+    font-size: 34px;
+    color: #4a3f35;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    margin-top: 180px !important; /* Đẩy tiêu đề xuống */
+}
+
+/* ================= BẢNG ĐƠN HÀNG ================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fffaf2;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: linear-gradient(135deg, #5d4a3c, #9d8b73);
+    color: #fff7e6;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 14px 10px;
+    white-space: nowrap;
+}
+
+td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #e8dccb;
+    color: #3b2f2f;
+    font-size: 15px;
+}
+
+tr:hover {
+    background-color: rgba(245, 229, 200, 0.5);
+    transition: background 0.3s ease;
+}
+
+td a {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 0 3px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+td a[href*="view_order"] {
+    background-color: #6a5745;
+    color: #fff7e6;
+}
+td a[href*="view_order"]:hover {
+    background-color: #4e3f33;
+}
+
+td a[href*="change_status"] {
+    background-color: #8a7a50;
+    color: #fff7e6;
+}
+td a[href*="change_status"]:hover {
+    background-color: #6c5b3b;
+}
+
+td a[href*="delete_order"] {
+    background-color: #b85c38;
+    color: #fff7e6;
+}
+td a[href*="delete_order"]:hover {
+    background-color: #a14b2e;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: linear-gradient(to top right, #9d8b73, #5d4a3c);
+    color: #fff7e6;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+    border-radius: 40px 40px 0 0;
+}
+
+footer .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer .menuBottom {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+footer .menuBottom li {
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer .menuBottom li:hover {
+    color: #ffd47f;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    header .menu ul {
+        gap: 15px;
+    }
+    header .menu ul li a {
+        font-size: 14px;
+    }
+    main {
+        margin: 120px 15px 50px;
+        padding: 20px;
+    }
+    table {
+        font-size: 13px;
+    }
+    td, th {
+        padding: 10px 6px;
+    }
+}

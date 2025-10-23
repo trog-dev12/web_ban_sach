@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Giày thể thao Nike đen 40",
+        "price": 520,
+        "image": "./img/nike.png"
+    },
+    {
+        "id": 2,
+        "name": "Giày thể thao Nike đen 41",
+        "price": 220,
+        "image": "./img/nike.png"
+    },
+    {
+        "id": 3,
+        "name": "Giày thể thao Nike đen 42",
+        "price": 250,
+        "image": "./img/nike.png"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Giày thể thao xanh 40",
+        "price": 520,
+        "image": "./img/nikejd.png"
+    },
+    {
+        "id": 5,
+        "name": "Giày thể thao xanh 41",
+        "price": 220,
+        "image": "./img/nikejd.png"
+    },
+    {
+        "id": 6,
+        "name": "Giày thể thao xanh 42",
+        "price": 250,
+        "image": "./img/nikejd.png"
+    },
+    {
+        "id": 7,
+        "name": "Giày thể thao đen 40",
+        "price": 420,
+        "image": "/img/black.png"
+    },
+    {
+        "id": 8,
+        "name": "Giày thể thao đen 41",
+        "price": 120,
+        "image": "/img/black.png"
+    },
+    {
+        "id": 9,
+        "name": "Giày thể thao đen 42",
+        "price": 120,
+        "image": "/img/black.png"
+    }
+]

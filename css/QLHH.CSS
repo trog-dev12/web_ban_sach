@@ -1,0 +1,213 @@
+/* =================== GIAO DIỆN QUẢN LÝ SẢN PHẨM - BOOK STORE =================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+    background-attachment: fixed;
+    color: #3b2f2f;
+    line-height: 1.7;
+}
+
+/* ================= HEADER ================= */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(to right, #7c6753cc, #b49f85cc);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #d9c9ae;
+}
+
+header .box {
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 26px;
+    color: #fff7e6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header .menu ul li a {
+    color: #fff7e6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header .menu ul li a:hover {
+    color: #ffd47f;
+}
+
+/* ================= KHUNG CHÍNH ================= */
+main {
+    width: 1000px;
+    max-width: 95%;
+    margin: 140px auto 60px;
+    background-color: rgba(255, 248, 240, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #4a3f35;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px #d9c9ae;
+}
+
+h2 {
+    text-align: center;
+    color: #5a4b3f;
+    border-bottom: 2px solid #cbb89d;
+    padding-bottom: 8px;
+}
+
+/* ================= FORM ================= */
+form {
+    background-color: #fffdf9;
+    border: 1px solid #d9c9ae;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #3b2f2f;
+    margin-top: 10px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #bca98a;
+    border-radius: 8px;
+    background-color: #fffdf9;
+    font-size: 15px;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: #4a3f35;
+    color: #f5deb3;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3b3028;
+    transform: translateY(-2px);
+}
+
+/* ================= TABLE ================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #fffaf2;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #6a5745;
+    color: #fff7e6;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e8dccb;
+    color: #3b2f2f;
+}
+
+td img {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+a {
+    color: #7b5d3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #b48a55;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: linear-gradient(to right, #9d8b73, #5d4a3c);
+    color: #fff7e6;
+    padding: 30px 0;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 100px;
+}
+
+footer .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer .menuBottom {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+footer .menuBottom li {
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+footer .menuBottom li:hover {
+    color: #ffd47f;
+}
